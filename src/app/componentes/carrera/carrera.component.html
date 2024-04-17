@@ -1,3 +1,13 @@
-<div>
+<div class="row" *ngFor="let auto of autos" >
+    <div class="col-sm-3">
+        <app-auto [auto]="auto"></app-auto>
+    </div>
     
 </div>
+
+
+<div class="row">
+    <input class="col -4" type="button" value="Correr" (click)="recorrer()">
+    <input class="col -4"type="button" value="Cargar" (click)="cargar()">
+</div>
+
